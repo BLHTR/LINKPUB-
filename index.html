@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA REVOLUCIÓN IA: Por Qué Esperar es el Nuevo Fracaso Profesional</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .danger-gradient {
+            background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+        }
+        .success-gradient {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .warning-gradient {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .pulse-animation {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+        .number-highlight {
+            font-size: 3rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+        .section-divider {
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2, #ff416c);
+            margin: 4rem 0;
+        }
+        .chart-container {
+            height: 400px;
+            margin: 2rem 0;
+        }
+        .tool-card {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 1px solid #e2e8f0;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            margin: 0.5rem 0;
+            transition: all 0.3s ease;
+        }
+        .tool-card:hover {
+            border-color: #667eea;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+        }
+        .impact-number {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 0.8;
+            margin-bottom: 0.5rem;
+        }
+        .urgency-banner {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+            color: white;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 700;
+            margin: 2rem 0;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px rgba(255, 65, 108, 0.5); }
+            to { box-shadow: 0 0 30px rgba(255, 65, 108, 0.8); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex items-center justify-center mb-6">
+                <i class="fas fa-robot text-6xl mr-4"></i>
+                <i class="fas fa-bolt text-4xl text-yellow-300 pulse-animation"></i>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">
+                LA REVOLUCIÓN IA
+            </h1>
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-blue-100">
+                Por Qué Esperar es el Nuevo Fracaso Profesional
+            </h2>
+            <p class="text-xl md:text-2xl font-light max-w-4xl mx-auto leading-relaxed">
+                La Inteligencia Artificial ya no es el futuro. Es TU PRESENTE. Y la pregunta ya no es si transformará tu trabajo, sino <strong>cuándo empezarás a usarla</strong> para no quedarte obsoleto.
+            </p>
+        </div>
+    </header>
+
+    <!-- Urgency Banner -->
+    <div class="container mx-auto px-6 -mt-8">
+        <div class="urgency-banner">
+            <i class="fas fa-exclamation-triangle text-2xl mr-3"></i>
+            ADVERTENCIA: Cada día que pasa sin adoptar IA es un día más cerca de la obsolescencia profesional
+            <i class="fas fa-exclamation-triangle text-2xl ml-3"></i>
+        </div>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12 gradient-text">
+                <i class="fas fa-chart-line mr-4"></i>
+                Los Números que Cambiarán Tu Perspectiva
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg card-hover">
+                    <div class="impact-number gradient-text">72%</div>
+                    <p class="text-gray-600 font-semibold">de las empresas ya usan IA</p>
+                    <p class="text-sm text-gray-500 mt-2">¿La tuya está en el juego?</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg card-hover">
+                    <div class="impact-number text-green-600">5x</div>
+                    <p class="text-gray-600 font-semibold">más productivos</p>
+                    <p class="text-sm text-gray-500 mt-2">sectores que usan IA</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg card-hover">
+                    <div class="impact-number text-blue-600">$4.4T</div>
+                    <p class="text-gray-600 font-semibold">potencial de productividad</p>
+                    <p class="text-sm text-gray-500 mt-2">según McKinsey</p>
+                </div>
+                
+                <div class="text-center p-8 bg-white rounded-xl shadow-lg card-hover">
+                    <div class="impact-number text-purple-600">40%</div>
+                    <p class="text-gray-600 font-semibold">de empleos impactados</p>
+                    <p class="text-sm text-gray-500 mt-2">a nivel mundial</p>
+                </div>
+            </div>
+
+            <!-- Chart: AI Adoption Growth -->
+            <div class="bg-white rounded-xl shadow-lg p-8 mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-center">Adopción de IA: El Crecimiento Exponencial</h3>
+                <div class="chart-container">
+                    <canvas id="adoptionChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Cases -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <i class="fas fa-trophy text-yellow-500 mr-4"></i>
+                Casos de Éxito que Te Dejarán Sin Palabras
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-dropbox text-4xl text-blue-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold">Dropbox</h3>
+                    </div>
+                    <div class="text-3xl font-black text-blue-600 mb-2">$75 MILLONES</div>
+                    <p class="text-gray-700">ahorrados con IA en automatización de procesos</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-cc-visa text-4xl text-purple-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold">Visa</h3>
+                    </div>
+                    <div class="text-3xl font-black text-purple-600 mb-2">$40 MIL MILLONES</div>
+                    <p class="text-gray-700">en fraude prevenido anualmente</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-users text-4xl text-green-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold">Eightfold</h3>
+                    </div>
+                    <div class="text-3xl font-black text-green-600 mb-2">40% MENOS</div>
+                    <p class="text-gray-700">tiempo de contratación en RRHH</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-plane text-4xl text-red-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold">Aerolíneas</h3>
+                    </div>
+                    <div class="text-3xl font-black text-red-600 mb-2">10% MENOS</div>
+                    <p class="text-gray-700">consumo de combustible optimizado</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-yellow-50 to-yellow-100 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shopping-cart text-4xl text-yellow-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold">Sparex</h3>
+                    </div>
+                    <div class="text-3xl font-black text-yellow-600 mb-2">95% PRECISIÓN</div>
+                    <p class="text-gray-700">en inventario + $5M ahorrados</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-indigo-50 to-indigo-100 p-8 rounded-xl shadow-lg card-hover">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-chart-bar text-4xl text-indigo-600 mr-4"></i>
+                        <h3 class="text-2xl font-bold">Trabajadores IA</h3>
+                    </div>
+                    <div class="text-3xl font-black text-indigo-600 mb-2">66% MÁS</div>
+                    <p class="text-gray-700">productividad vs trabajadores tradicionales</p>
+                </div>
+            </div>
+
+            <!-- ROI Chart -->
+            <div class="bg-white rounded-xl shadow-lg p-8">
+                <h3 class="text-2xl font-bold mb-6 text-center">ROI de la IA: Los Números Hablan</h3>
+                <div class="chart-container">
+                    <canvas id="roiChart"></canvas>
+                </div>
+                <div class="text-center mt-6">
+                    <p class="text-lg text-gray-600">
+                        <strong>92% de empresas pioneras</strong> ya experimenta ROI positivo con IA
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Danger Zone -->
+    <section class="py-16 bg-gradient-to-r from-red-500 to-pink-500 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <i class="fas fa-skull-crossbones mr-4"></i>
+                LA ZONA DE PELIGRO: ¿Qué Pasa Si No Actúas?
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-6">Los Empleos en Riesgo INMEDIATO:</h3>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-center">
+                            <i class="fas fa-times-circle text-2xl mr-4"></i>
+                            <span><strong>40% de tareas de programación</strong> serán automatizadas para 2040</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-times-circle text-2xl mr-4"></i>
+                            <span><strong>Análisis de datos básico</strong> ya está siendo reemplazado</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-times-circle text-2xl mr-4"></i>
+                            <span><strong>Atención al cliente nivel 1</strong> desapareciendo rápidamente</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-times-circle text-2xl mr-4"></i>
+                            <span><strong>Contabilidad básica</strong> completamente automatizable</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-times-circle text-2xl mr-4"></i>
+                            <span><strong>Traducción simple</strong> ya superada por IA</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-white bg-opacity-20 rounded-xl p-8">
+                        <div class="text-6xl font-black mb-4">92M</div>
+                        <p class="text-xl font-semibold mb-4">empleos desplazados para 2030</p>
+                        <div class="text-4xl font-black text-green-300 mb-2">170M</div>
+                        <p class="text-lg">nuevos empleos creados</p>
+                        <div class="mt-6 p-4 bg-green-500 bg-opacity-30 rounded-lg">
+                            <p class="font-bold">Balance neto: +78 millones de empleos</p>
+                            <p class="text-sm mt-2">Pero solo para quienes se adapten</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Arsenal -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12 gradient-text">
+                <i class="fas fa-toolbox mr-4"></i>
+                Tu Arsenal de Supervivencia: Herramientas IA Esenciales
+            </h2>
+            
+            <div class="grid lg:grid-cols-2 gap-8">
+                <!-- Escritura y Contenido -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-pen-fancy text-blue-600 mr-3"></i>
+                        Escritura y Contenido
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">ChatGPT</h4>
+                            <p class="text-gray-600">Tu asistente para emails, ideas y resúmenes que nunca duerme</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Jasper</h4>
+                            <p class="text-gray-600">Crea textos de marketing que venden mientras duermes</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Grammarly</h4>
+                            <p class="text-gray-600">Escribe sin errores y con impacto profesional</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Productividad y Gestión -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-rocket text-green-600 mr-3"></i>
+                        Productividad y Gestión
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Notion AI</h4>
+                            <p class="text-gray-600">Organiza tu vida y trabajo como nunca antes</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">ClickUp AI</h4>
+                            <p class="text-gray-600">Gestiona proyectos como un profesional experto</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Otter.ai / Fireflies.ai</h4>
+                            <p class="text-gray-600">Transcripciones y resúmenes de reuniones instantáneos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creatividad y Diseño -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-palette text-purple-600 mr-3"></i>
+                        Creatividad y Diseño
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Midjourney</h4>
+                            <p class="text-gray-600">Crea imágenes espectaculares solo con texto</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Synthesia</h4>
+                            <p class="text-gray-600">Genera videos profesionales con avatares IA</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Adobe Sensei</h4>
+                            <p class="text-gray-600">Superpoderes para todas tus herramientas Adobe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desarrollo y Ventas -->
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 flex items-center">
+                        <i class="fas fa-code text-red-600 mr-3"></i>
+                        Desarrollo y Ventas
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">GitHub Copilot</h4>
+                            <p class="text-gray-600">Escribe código 10x más rápido que antes</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Tabnine</h4>
+                            <p class="text-gray-600">Autocompletado inteligente para desarrolladores</p>
+                        </div>
+                        <div class="tool-card">
+                            <h4 class="font-bold text-lg mb-2">Salesforce Einstein</h4>
+                            <p class="text-gray-600">Vende más inteligente, no más duro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Plan -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <i class="fas fa-bolt text-yellow-500 mr-4"></i>
+                Plan de Acción: Los Próximos 30 Días que Cambiarán Tu Carrera
+            </h2>
+            
+            <div class="max-w-4xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Week 1 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-xl shadow-lg text-center">
+                        <div class="text-4xl font-black text-blue-600 mb-4">SEMANA 1</div>
+                        <h3 class="text-xl font-bold mb-4">Exploración y Selección</h3>
+                        <ul class="text-left space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Elige UNA herramienta de IA</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Dedica 30 min/día a explorarla</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                                <span>Identifica 3 tareas repetitivas</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Week 2-3 -->
+                    <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-xl shadow-lg text-center">
+                        <div class="text-4xl font-black text-purple-600 mb-4">SEMANA 2-3</div>
+                        <h3 class="text-xl font-bold mb-4">Implementación Práctica</h3>
+                        <ul class="text-left space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-cog text-purple-500 mt-1 mr-2"></i>
+                                <span>Automatiza la primera tarea</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-cog text-purple-500 mt-1 mr-2"></i>
+                                <span>Mide el tiempo ahorrado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-cog text-purple-500 mt-1 mr-2"></i>
+                                <span>Refina el proceso</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Week 4 -->
+                    <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-xl shadow-lg text-center">
+                        <div class="text-4xl font-black text-green-600 mb-4">SEMANA 4</div>
+                        <h3 class="text-xl font-bold mb-4">Expansión y Maestría</h3>
+                        <ul class="text-left space-y-2">
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-green-500 mt-1 mr-2"></i>
+                                <span>Automatiza 2 tareas más</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-green-500 mt-1 mr-2"></i>
+                                <span>Comparte resultados con equipo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-star text-green-500 mt-1 mr-2"></i>
+                                <span>Planifica siguiente herramienta</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Success Metrics -->
+                <div class="mt-12 bg-gray-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-bold text-center mb-8">Métricas de Éxito: Qué Esperar</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-blue-600 mb-2">2-4h</div>
+                            <p class="text-gray-600">tiempo ahorrado diariamente</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-green-600 mb-2">50%</div>
+                            <p class="text-gray-600">reducción en tareas repetitivas</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-purple-600 mb-2">3x</div>
+                            <p class="text-gray-600">velocidad en entregas</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl font-black text-red-600 mb-2">∞</div>
+                            <p class="text-gray-600">ventaja competitiva</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills for the Future -->
+    <section class="py-16 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-black text-center mb-12">
+                <i class="fas fa-brain mr-4"></i>
+                Las Habilidades que Te Harán Invaluable
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-3xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-microchip mr-3"></i>
+                        Habilidades Técnicas del Futuro
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Ingeniería de Prompts</h4>
+                            <p>El arte de comunicarse efectivamente con IA</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Análisis de Datos con IA</h4>
+                            <p>Extraer insights valiosos de información compleja</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Machine Learning Básico</h4>
+                            <p>Entender cómo las máquinas aprenden y predicen</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Python & Automatización</h4>
+                            <p>Programación para automatizar procesos</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-3xl font-bold mb-8 flex items-center">
+                        <i class="fas fa-heart mr-3"></i>
+                        Habilidades Humanas Esenciales
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Pensamiento Crítico</h4>
+                            <p>Evaluar y cuestionar resultados de IA</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Creatividad Estratégica</h4>
+                            <p>Combinar IA con visión humana única</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Inteligencia Emocional</h4>
+                            <p>Manejar equipos humano-IA efectivamente</p>
+                        </div>
+                        <div class="bg-white bg-opacity-20 rounded-lg p-4">
+                            <h4 class="font-bold text-xl mb-2">Aprendizaje Continuo</h4>
+                            <p>Adaptarse constantemente a nuevas tecnologías</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="py-16 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-black mb-8">
+                Tu Momento de Decisión es <span class="text-red-400">AHORA</span>
+            </h2>
+            
+            <div class="max-w-4xl mx-auto mb-12">
+                <p class="text-xl md:text-2xl leading-relaxed mb-8">
+                    No necesitas ser un experto en IA para empezar a usarla. Solo necesitas <strong>curiosidad</strong> y <strong>ganas de crecer</strong>. La diferencia entre el éxito y la obsolescencia se decide hoy.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 mt-12">
+                    <div class="bg-red-600 p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-4">Si NO Actúas Hoy:</h3>
+                        <ul class="text-left space-y-2">
+                            <li>❌ Te quedas atrás mientras otros avanzan</li>
+                            <li>❌ Tus competidores se vuelven 5x más productivos</li>
+                            <li>❌ Tu valor profesional disminuye día a día</li>
+                            <li>❌ Las oportunidades se reducen exponencialmente</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-green-600 p-8 rounded-xl">
+                        <h3 class="text-2xl font-bold mb-4">Si Actúas HOY:</h3>
+                        <ul class="text-left space-y-2">
+                            <li>✅ Te posicionas como líder innovador</li>
+                            <li>✅ Multiplicas tu productividad inmediatamente</li>
+                            <li>✅ Aumentas tu valor en el mercado laboral</li>
+                            <li>✅ Aseguras tu futuro profesional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-2xl font-bold mb-8">
+                La IA no viene a quitarte el trabajo, viene a quitarte las <span class="text-yellow-400">tareas aburridas</span>.
+            </div>
+            
+            <div class="text-lg text-gray-300">
+                <p>Fuentes: McKinsey Global Institute, World Economic Forum, PwC AI Analysis, Stanford AI Index 2025</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">
+                <i class="fas fa-rocket mr-2"></i>
+                La revolución IA ya comenzó. La pregunta es: ¿estarás en ella o la verás pasar?
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // AI Adoption Chart
+        const adoptionCtx = document.getElementById('adoptionChart').getContext('2d');
+        new Chart(adoptionCtx, {
+            type: 'line',
+            data: {
+                labels: ['2022', '2023', '2024', '2025 (Proj.)'],
+                datasets: [{
+                    label: 'Adopción de IA (%)',
+                    data: [35, 55, 78, 85],
+                    borderColor: 'rgb(102, 126, 234)',
+                    backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                    borderWidth: 4,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        ticks: {
+                            callback: function(value) {
+                                return value + '%';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // ROI Chart
+        const roiCtx = document.getElementById('roiChart').getContext('2d');
+        new Chart(roiCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ['ROI Positivo', 'Sin ROI Aún', 'ROI Negativo'],
+                datasets: [{
+                    data: [92, 6, 2],
+                    backgroundColor: [
+                        '#10B981',
+                        '#F59E0B', 
+                        '#EF4444'
+                    ],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            font: {
+                                size: 14,
+                                weight: 'bold'
+                            },
+                            padding: 20
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
